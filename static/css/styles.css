@@ -1,5 +1,6 @@
 body {
-    background-color: #e1f4f3;
+            
+    background-color: #6e60e6;
     text-align: center;
 }
 
@@ -7,10 +8,39 @@ body {
     background-color: #333333;
 }
 
-a {
-    color: #f1f9f9;
+.sub{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: rgba(250,100,0,0.8);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.first{
+    width: 550px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: 0;
+    padding: 7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.5);
 }
 
-a:hover {
-    color: #f0f0f0;
-  }
+.second{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: inherit;
+}
+.third{
+    color: yellow;
+    margin: 30px auto 0px auto;
+}
+a {
+    color: #f1f9f9;
+    position: centre;
+}
