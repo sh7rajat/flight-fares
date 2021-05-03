@@ -20,29 +20,26 @@
 <body>
 
     <!-- As a heading -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/">FLIGHT PRICE</a>
-            </div>
+    
+        <div class="third">
+            <h2>PREDICT THE FLIGHT PRICE</h2>
         </div>
-    </nav>
 
     <br><br><br>
 
 
     <div class="container">
 
-
+        <!-- <h1> CHECK THE FLIGHT PRICE </h1><br> -->
 
         <form action="\predict" method="post">
 
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="first">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Departure Date</h5>
+                            <h5 class="second"><b>Departure Date </b></h5>
                             <!-- Departure -->
                             <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
                         </div>
@@ -50,11 +47,12 @@
                 </div>
                 <br>
                 <br>
-                <br>
-                <div class="col-sm-6">
+                <br><br>
+
+                <div class="first">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Arrival Date</h5>
+                            <h5 class="second"><b>Arrival Date</b></h5>
                             <!-- Arrival -->
                             <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
                         </div>
@@ -67,11 +65,11 @@
             <br>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="first">
                     <div class="card">
                         <div class="card-body">
                             <!-- Source -->
-                            <h5 class="card-title">Source</h5>
+                            <h5 class="second"><b>Source</b></h5>
                             <select name="Source" id="Source" required="required">
                                 <option value="Delhi">Delhi</option>
                                 <option value="Kolkata">Kolkata</option>
@@ -81,10 +79,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="first">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Destination</h5>
+                            <h5 class="second"><b>Destination</b></h5>
                             <!-- Destination -->
                             <select name="Destination" id="Destination" required="required">
                                 <option value="Cochin">Cochin</option>
@@ -105,10 +103,10 @@
             <br>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="first">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Stopage</h5>
+                            <h5 class="second"><b>Stopage / Hault </b></h5>
                             <!-- Total Stops -->
                             <select name="stops" required="required">
                                 <option value="0">Non-Stop</option>
@@ -120,10 +118,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="first">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Which Airline you want to travel?</h5>
+                            <h5 class="second"><b>In which Airline you want to travel?</b></h5>
                             <!-- Airline -->
                             <select name="airline" id="airline" required="required">
                                 <option value="Jet Airways">Jet Airways</option>
@@ -151,7 +149,7 @@
             <br>
             <br>
             <!-- Submit -->
-            <input type="submit" value="Submit" class="btn btn-secondary">
+            <input type="submit" value="Submit" class="sub">
         </form>
 
         <br>
@@ -160,7 +158,7 @@
 
         <br>
         <br>
-        <p>©2020 Amar Mandal</p>
+        
 
     </div>
 
@@ -179,5 +177,4 @@
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>
