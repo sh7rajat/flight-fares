@@ -15,11 +15,13 @@ body {
     background-color: #333333;
 }
 
-h4 {
-    color: #f1f9f9;
+h2 {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
 }
 h3{
-    color: #fff;
+    color: white;
 }
 
 /*a:hover {
