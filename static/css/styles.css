@@ -1,17 +1,44 @@
-body {
-    /*background-color: #e1f4f3;*/
-    background-color: #6051db;
-    text-align: center;
+body{
+	/*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),url(aeroplane.jpg));*/
+	background-image: url("aeroplane.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
-.navbar {
-    background-color: #333333;
+.booking-form-box{
+	max-width: 350px !important;
+	border: 1px solid #ced4da !important;
+	margin: 10% auto 30 !important;
 }
-
-a {
-    color: #f1f9f9;
+.booking-form{
+	padding: 10px 20px 40px;
 }
-
-a:hover {
-    color: #f0f0f0;
-  }
+.booking-form label{
+	margin-bottom: 5px !important;
+	margin-top: 10px !important;
+	font-size: 20px !important;
+	color: #fff !important;
+}
+.input-grp{
+	width: 150px !important;
+	display: inline-block !important;
+}
+/*.form-control{
+	font-size: 16px !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+}*/
+.sub{
+    width: 200px !important;
+    padding: 7px !important;
+    font-size: 16px !important;
+    font-family: sans-serif !important;
+    font-weight: 600 !important;
+    border-radius: 3px !important;
+    background-color: rgba(250,100,0,0.8) !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3) !important;
+}
