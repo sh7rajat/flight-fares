@@ -12,62 +12,119 @@
 
 
     <!-- css -->
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="design.css">
+
 
 </head>
 
-
 <body>
-	<div class="booking-form-box">
 
-	<form action="\predict" method="post">
-		
-		<div class="booking-form">
-			<label> Source </label>
-			<!-- <input type="text" class="form-control" placeholder="City" required="required"> -->
-			<select name="Source" class="form-control" required="required">
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <H4 align="center">FLIGHT PRICE</H4>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+             <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Source</h5>
+                            <select name="Source" id="Source" required="required">
                                 <option value="Delhi">Delhi</option>
                                 <option value="Kolkata">Kolkata</option>
                                 <option value="Mumbai">Mumbai</option>
                                 <option value="Chennai">Chennai</option>
-            </select>
-
-			<label> Destination </label>
-			<!-- <input type="text" class="form-control" placeholder="City" required="required"> -->
-			<select name="Destination" class="form-control" required="required">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination</h5>
+                            <!-- Destination -->
+                            <select name="Destination" id="Destination" required="required">
                                 <option value="Cochin">Cochin</option>
                                 <option value="Delhi">Delhi</option>
                                 <option value="New Delhi">New Delhi</option>
                                 <option value="Hyderabad">Hyderabad</option>
                                 <option value="Kolkata">Kolkata</option>
-            </select>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
 
-			<div class="input-grp">
-				<label> Departure Date </label>
-				<input type="datetime-local" name="Departure_time" class="form-control select-date" required="required">
-			</div>
 
-			<div class="input-grp">
-				<label> Arrival Date </label>
-				<input type="datetime-local" name="Arrival_time" class="form-control select-date" required="required">
-			</div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Departure Date</h5>
+                            <!-- Departure -->
+                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Arrival Date</h5>
+                            <!-- Arrival -->
+                            <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<div>
-				<label> Haults </label>
-				<!-- Number of Haults -->
-				<select class="form-control" name="stops" required="required">
+            <br>
+            <br>
+            <br>
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"> Haults </h5>
+                            <!-- Total Stops -->
+                            <select name="stops" required="required">
                                 <option value="0">Non-Stop</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
-                </select>
-			</div>
-
-			<div>
-				<label> Airline you want to travel ? </label>
-				<!-- Airlines -->
-				<select name="airline" class="form-control" required="required">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Airline you want to travel in?</h5>
+                            <!-- Airline -->
+                            <select name="airline" id="airline" required="required">
                                 <option value="Jet Airways">Jet Airways</option>
                                 <option value="IndiGo">IndiGo</option>
                                 <option value="Air India">Air India</option>
@@ -82,24 +139,33 @@
                                 <option value="Vistara Premium economy">Vistara Premium economy</option>
                                 <option value="Trujet">Trujet</option>
                             </select>
-			</div><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<div>
-				<button type="button" value="submit class="btn btn-secondary"> Submit</button>
-			</div>
 
-		</div>
-	</form>
 
-	<br>
+            <br>
+            <br>
+            <br>
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="sub">
+        </form>
+
         <br>
-        <h3 class="booking-form">{{ prediction_text }}</h3>
+        <br>
+        <h3>{{ prediction_text }}</h3>
 
         <br>
         <br>
 
-</div>
-	<!-- JavaScript -->
+    </div>
+
+
+
+
+    <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -111,4 +177,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>
