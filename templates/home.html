@@ -1,5 +1,4 @@
-
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +20,7 @@
 <body>
 
     <!-- As a heading -->
-   <!--  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <!--   <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <H4> PREDICT THE FLIGHT PRICE</H4>
@@ -37,12 +36,12 @@
 
 
 
-        <form action="\predict" method="post">
+        <form action="\predict" method="post" class="form-container">
 
 
              <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <!-- <div class="card"> -->
                         <div class="card-body">
                             <!-- Source -->
                             <h5 class="card-title">Source</h5>
@@ -53,10 +52,10 @@
                                 <option value="Chennai">Chennai</option>
                             </select>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <!-- <div class="card"> -->
                         <div class="card-body">
                             <h5 class="card-title">Destination</h5>
                             <!-- Destination -->
@@ -68,7 +67,7 @@
                                 <option value="Kolkata">Kolkata</option>
                             </select>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
             <br>
@@ -77,26 +76,26 @@
 
 
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <!-- <div class="card"> -->
                         <div class="card-body">
                             <h5 class="card-title">Departure Date</h5>
                             <!-- Departure -->
                             <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
                 <br>
                 <br>
                 <br>
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <!-- <div class="card"> -->
                         <div class="card-body">
                             <h5 class="card-title">Arrival Date</h5>
                             <!-- Arrival -->
                             <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
 
@@ -106,8 +105,8 @@
 
 
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-md-4 col-sm-4 col-xs-126">
+                    <!-- <div class="card"> -->
                         <div class="card-body">
                             <h5 class="card-title"> Haults </h5>
                             <!-- Total Stops -->
@@ -119,10 +118,10 @@
                                 <option value="4">4</option>
                             </select>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
-                <div class="col-sm-6">
-                    <div class="card">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <!-- <div class="card"> -->
                         <div class="card-body">
                             <h5 class="card-title">Airline you want to travel in?</h5>
                             <!-- Airline -->
@@ -142,7 +141,7 @@
                                 <option value="Trujet">Trujet</option>
                             </select>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
 
@@ -152,7 +151,9 @@
             <br>
             <br>
             <!-- Submit -->
-            <input type="submit" value="Submit" class="sub">
+             <div class="btn-sm">
+                 <button class="btn btn-success btn-lg" type="submit">Submit</button>
+             </div>
         </form>
 
         <br>
