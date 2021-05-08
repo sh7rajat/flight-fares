@@ -51,7 +51,6 @@ def predict():
         # Airline
         # AIR ASIA = 0 (not in column)
         airline=request.form['airline']
-        airline.insert(0,"Select Airline")
         if(airline=='Jet Airways'):
             Jet_Airways = 1
             IndiGo = 0
