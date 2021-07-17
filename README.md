@@ -15,6 +15,11 @@ I started to learn Machine Learning and found it interesting. I came to know the
 This is a Machine Learning project which predicts the fare of your flight ticket. We have trained our machine with a large amount of data and on the basis of necessary details required for booking a flight ticket we'll predict the fare of the flight ticket.
 These necessary details includes Source,Destination,Departure Date and Time,Arrival Date and Time,Number of Haults in between the journey, and the Airline you want to travel in.
 
+# Installation
+The Code is written in Python 3.6.10. To install the required packages and libraries, run the command in the project directory 
+```bash
+pip install -r 
+```
 # Deployment on Heroku
 In order to create a virtual app on heroku, simply connected my github profile and deployed the project.
 
