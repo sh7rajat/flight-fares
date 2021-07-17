@@ -13,4 +13,4 @@ I started to learn Machine Learning and found it interesting. I came to know the
 
 # Project Description
 This is a Machine Learning project which predicts the fare of your flight ticket. We have trained our machine with a large amount of data and on the basis of necessary details required for booking a flight ticket we'll predict the fare of the flight ticket.
-These details includes Source,Destination,Departure Date and Time,Arrival Date and Time,Number of Haults in between the journey, and the Airline you want to travel in.
+These necessary details includes Source,Destination,Departure Date and Time,Arrival Date and Time,Number of Haults in between the journey, and the Airline you want to travel in.
