@@ -1,4 +1,4 @@
-# Flight Fare Prediction: 
+# Flight Fare Prediction
 
 ## Demo
 Link: [https://flights-prices.herokuapp.com/](https://flights-prices.herokuapp.com/)
@@ -10,3 +10,7 @@ Link: [https://flights-prices.herokuapp.com/](https://flights-prices.herokuapp.c
 # Motivation
 During lockdown, at the time of COVID 19 pandemic what to do when you are at home ? 
 I started to learn Machine Learning and found it interesting. I came to know the mathematics behind it. Then I decided to work on the real world application to make a difference.
+
+# Project Description
+This is a Machine Learning project which predicts the fare of your flight ticket. We have trained our machine with a large amount of data and on the basis of necessary details required for booking a flight ticket we'll predict the fare of the flight ticket.
+These details includes Source,Destination,Departure Date and Time,Arrival Date and Time,Number of Haults in between the journey, and the Airline you want to travel in.
