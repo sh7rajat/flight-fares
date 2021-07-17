@@ -7,4 +7,6 @@ Link: [https://flights-prices.herokuapp.com/](https://flights-prices.herokuapp.c
 
 ![image2](https://user-images.githubusercontent.com/78398995/117526531-7dec3080-afe3-11eb-845c-850315171fd1.JPG)
 
-
+# Motivation
+During lockdown, at the time of COVID 19 pandemic what to do when you are at home ? 
+I started to learn Machine Learning and found it interesting. I came to know the mathematics behind it. Then I decided to work on the real world application to make a difference.
